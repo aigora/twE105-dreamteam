@@ -3,7 +3,9 @@ Programa para poder comprar articulos catalogados online del decathlon a traves 
 
 ## INTEGRANTES DEL EQUIPO
 Mariano Jiménez Bohórquez, usuario github: marianojimenezbohorquez
+
 Raúl Carrero Ramos, usuario github: raulcarrero
+
 Rodrigo Márquez Benito, usuario github: RodrigoMarquezB
 
 ## Objetivos del trabajo
