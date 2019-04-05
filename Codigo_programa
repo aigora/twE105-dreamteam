@@ -1,0 +1,68 @@
+#include <stdio.h>
+#include <string.h>
+
+char menu();
+
+int main(){
+	int opcion = 0;
+	
+	//Antes del bucle del menu habra otro bucle que permitira al usuario registrarse o iniciar sesion
+	//Bucle del menu:
+	while(1){
+		switch(menu()){
+			case'1':
+				printf("El catalogo actual es el siguiente: \n");
+				getchar();
+				break;
+			case'2':
+				printf("Aqui podra añadir productos a su carrito.\n\t Inserte el numero del producto que desee: \n");
+				getchar();
+				break;
+			case'3':
+				printf("Aqui podra retirar productos del carrito siempre y cuando no este vacio.\n\t Inserte el numero del producto que desea retirar: \n");
+				getchar();
+				break;
+			case'4':
+				printf("Este es su carrito de la compra hasta el momento... \n");
+				getchar();
+				break;
+			case'5':
+				printf("Aqui podra pagar los productos deseados con tarjeta.\n\t Por favor, introduzca el numero de su tarjeta de credito: \n");
+				getchar();
+				break;
+			case'6':
+				printf("Aqui podra visualizar las ofertas disponibles que hay en nuestra tienda. \n\t DESCUENTOS: \n");
+				getchar();
+				break;
+			case'7':
+				return;
+				break;
+			case'8':
+				printf("Aqui mientras seas administrador podras añadir o retirar productos de nuestra tienda. \n");
+				getchar();
+				break;
+			default:
+				printf("La opcion no es valida.\n");
+				system("pause");
+				break;
+			
+		}
+	}
+	return 0;
+}
+
+char menu() {
+	char opcion;
+
+	printf("Bienvenido, seleccione una de estas opciones: \n");
+	printf("\t1 - Para ver el catalogo(precios, productos...)\n");
+	printf("\t2 - Para anadir al carrito los productos deseados...\n");
+	printf("\t3 - Para retirar elementos del carrito...\n");
+	printf("\t4 - Para ver el estado del carrito de la compra...\n");
+	printf("\t5 - Para pagar los productos introducidos en el carrito...\n");
+	printf("\t6 - Para ver la lista de descuentos disponibles...\n");
+	printf("\t7 - Para salir del programa...\n");
+	printf("\t8 - Para anadir productos al catalogo...(debe ser ADMINISTRADOR)\n");
+	scanf_s("%c", &opcion);
+	return opcion;
+}
